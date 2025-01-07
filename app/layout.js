@@ -1,6 +1,6 @@
 import { Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
-import Header from "./components/Header";
+import Header from "../components/Header";
 const poiretOne = Poiret_One({
   subsets: ["latin"],
   weight: ["400"],
@@ -11,8 +11,6 @@ const montserrat = Montserrat({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
   // variable: '--font-montserrat'
 })
-
-
 
 export const metadata = {
   title: "Hair by Nadia",
@@ -25,7 +23,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className}`}
       >
-        {/* <Header /> */}
+        <Header />
         {children}
       </body>
     </html>
