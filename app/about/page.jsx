@@ -34,14 +34,14 @@ const About = () => {
                     <p className="text-center text-[18px]">Our founder and lead hair stylist <span className="text-luxury border-b-2 border-luxury">Nadia Garofalo</span> completed a comprehensive apprenticeship and holds multiple professional certifications, demonstrating an unwavering commitment to excellence and continuous learning in the ever-evolving beauty industry.
                         <br />
                         <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <span>Her passion for hairstyling is matched by her dedication to staying ahead of trends and techniques, ensuring every client receives a personalized experience tailored to their unique vision and style. Nadia's artistry and attention to detail have earned her a reputation for transforming hair into works of art that inspire confidence and elegance.</span>
                     </p>
                 </div>
                 {/* col 1 image */}
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.4, ease: 'easeIn' } }}
-                    className="flex items-center justify-center mt-10">
+                    className="flex items-center justify-center mt-10 xl:mt-0">
                     <Image src={'/assets/about-us-img2.png'} width={550} height={100} alt="welcome hair style" />
                 </motion.div>
             </div>
@@ -71,7 +71,7 @@ const About = () => {
             </div>
 
             {/* final row */}
-            <div className="flex flex-col justify-center items-center xl:min-w-[400px]">
+            <div className="flex flex-col justify-center items-center xl:min-w-[400px] xl:mt-20">
                 <div className="w-[80%] md:w-[60%] flex items-center justify-center mb-20">
                     <p className="text-[18px] text-center">At <span className="text-luxury border-b-2 border-luxury">Hair by Nadia</span>, we believe that everyone deserves to shine. Whether you're here for a transformative new look or a simple touch-up, our team is dedicated to providing exceptional care, attention to detail, and a little extra confidence in every visit.
                     </p>

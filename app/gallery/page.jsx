@@ -30,7 +30,11 @@ export default function MasonryGrid() {
 
     return (
         <div className="px-[200px] mx-auto p-4">
-            <h1 className="text-center text-2xl font-bold mb-6">Gallery</h1>
+            {/* <h2 className="text-center text-2xl font-bold mb-6">Gallery</h2> */}
+            <div className="text-center">
+                <h1 className="text-[48px] inline-block mb-10 text-luxury border-b-2 border-luxury">Gallery</h1>
+            </div>
+            
             <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-5 space-y-4">
                 {images.map((image, index) => (
                     <div
