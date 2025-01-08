@@ -34,7 +34,7 @@ export default function Home() {
           <h1 className="font-primary text-[70px] md:text-[100px] xl:text-[178px] ">Hair by Nadia</h1>
 
           {/* button */}
-          {/* <button onClick={() => alert('Booking screen')} className="text-[18px] border-b-2 border-b-transparent hover:border-b-2 hover:border-luxury hover:text-luxury transition-all duration-900">Book Appointment</button> */}
+          <button onClick={() => alert('Booking screen')} className="xl:hidden text-[18px] border-b-2 border-b-transparent hover:border-b-2 hover:border-luxury hover:text-luxury transition-all duration-900">Book Appointment</button>
         </div>
       </motion.div>
     </>

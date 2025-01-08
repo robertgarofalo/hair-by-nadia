@@ -34,7 +34,7 @@ const Nav = () => {
         <nav className="flex items-center gap-9">
             {links.map((link, index) => (
                 <Link key={index} href={link.path}
-                    className={`${link.path === pathname && `text-luxury border-b-2 border-luxury`} font-medium border-b-2 border-b-transparent hover:text-luxury hover:border-luxury hover:border-b-2 capitalize transition-all`}
+                    className={`${link.path === pathname && `text-luxury border-b-2 border-luxury`} font-medium border-b-2 ${link.path !== pathname && 'border-b-transparent'} hover:text-luxury  capitalize transition-all`}
                 >
                     {link.name}
                 </Link>

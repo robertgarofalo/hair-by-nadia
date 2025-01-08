@@ -7,6 +7,10 @@
     @apply font-primary bg-primary text-secondary leading-loose
   }
 
+  section {
+    @apply p-10
+  }
+
   :root {
 
     --radius: 0.5rem
