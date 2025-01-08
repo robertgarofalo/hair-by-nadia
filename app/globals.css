@@ -6,6 +6,7 @@
   body {
     @apply font-primary bg-primary text-secondary leading-loose
   }
+
   :root {
 
     --radius: 0.5rem

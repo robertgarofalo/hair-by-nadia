@@ -1,6 +1,7 @@
 import { Montserrat, Poiret_One } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
+import PageTransition from "@/components/PageTransition";
 const poiretOne = Poiret_One({
   subsets: ["latin"],
   weight: ["400"],
@@ -23,9 +24,27 @@ export default function RootLayout({ children }) {
       <body
         className={`${montserrat.className}`}
       >
-        <Header />
-        {children}
+        <div className="relative">
+          <Header />
+          <PageTransition >
+            {children}
+          </PageTransition>
+        </div>
       </body>
     </html>
   );
 }
+
+
+// Timing
+/*
+
+Header desktop and mobile - 
+Add header
+nav links
+setup 4 - 5 pages
+functionality for mobile header open and close
+
+2 hours
+
+*/

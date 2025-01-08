@@ -1,10 +1,10 @@
 import Link from "next/link"
-import { FaInstagram, FaYoutube, FaFacebook } from 'react-icons/fa'
+import { FaInstagram, FaYoutube, FaFacebookF } from 'react-icons/fa'
 
 const socials = [
-    { icon: <FaFacebook />, path: '' },
-    { icon: <FaInstagram />, path: '' },
-    { icon: <FaYoutube />, path: '' },
+    { icon: <FaFacebookF size={20} />, path: '' },
+    { icon: <FaInstagram size={20}/>, path: '' },
+    { icon: <FaYoutube size={20}/>, path: '' },
 ]
 
 const SocialHeader = () => {
@@ -14,7 +14,7 @@ const SocialHeader = () => {
                 <Link href={social.path}
                     key={index} rel="noopener noreferrer"
                     target="_blank"
-                    className="w-9 h-9 border border-luxury rounded-full flex justify-center items-center text-luxury text-base hover:bg-luxury hover:text-primary hover:transition-all duration-500"
+                    className="w-9 h-9 border border-luxury rounded-full flex justify-center items-center text-luxury text-base hover:bg-luxury hover:text-white hover:transition-all duration-500"
                 >
                     {social.icon}
                 </Link>
