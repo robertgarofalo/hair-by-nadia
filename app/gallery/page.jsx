@@ -34,24 +34,24 @@ export default function MasonryGrid() {
     ]
 
     return (
-        <div className="px-[200px] mx-auto p-4">
+        <div className="px-[50px] xl:px-[150px] mx-auto p-4">
             {/* <h2 className="text-center text-2xl font-bold mb-6">Gallery</h2> */}
             <div className="text-center">
                 <h1 className="text-[48px] inline-block mb-10 text-luxury border-b-2 border-luxury">Gallery</h1>
             </div>
 
-            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-5 space-y-4">
+            <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 xl:gap-5 space-y-6 sm:space-y-4">
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className="break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300"
+                        className="break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-lg hover:scale-100 transition-transform duration-300"
                     >
                         <Image
                             src={image}
                             alt={`image ${index}`}
                             width={500}
                             height={300}
-                            className="w-full h-auto object-cover "
+                            className="w-full h-auto object-cover sm:grayscale hover:grayscale-0 transition-all duration-500"
                         />
                     </div>
                 ))}

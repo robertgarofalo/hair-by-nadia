@@ -20,10 +20,10 @@ const links = [
         name: 'gallery',
         path: '/gallery'
     },
-    // {
-    //     name: 'contact',
-    //     path: '/contact'
-    // },
+    {
+        name: 'contact',
+        path: '/contact'
+    },
 ]
 
 const Nav = () => {

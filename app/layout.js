@@ -14,8 +14,8 @@ const montserrat = Montserrat({
 })
 
 export const metadata = {
-  title: "Hair by Nadia",
-  description: "Hair studio - Melbourne",
+  title: "Hair by Nadia | Melbourne Hair Studio",
+  description: "Melbourne's number 1 hair studio",
 };
 
 export default function RootLayout({ children }) {
