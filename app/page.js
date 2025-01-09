@@ -1,4 +1,4 @@
-'use client'
+'use client' // screen 393px
 
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
@@ -31,7 +31,7 @@ export default function Home() {
 
         {/* content */}
         <div className="h-screen flex flex-col items-center justify-center relative z-10">
-          <h1 className="font-primary text-[70px] md:text-[100px] xl:text-[178px] ">Hair by Nadia</h1>
+          <h1 className="font-primary text-center text-[70px] md:text-[100px] xl:text-[178px] ">Hair by Nadia</h1>
 
           {/* button */}
           <button onClick={() => alert('Booking screen')} className="xl:hidden text-[18px] border-b-2 border-b-transparent hover:border-b-2 hover:border-luxury hover:text-luxury transition-all duration-900">Book Appointment</button>

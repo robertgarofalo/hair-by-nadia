@@ -107,10 +107,10 @@ const Contact = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1.8, duration: 0.4, ease: 'easeIn' } }}
             className='py-6'>
-            <div className="div container mx-auto">
+            <div className="sm:container mx-auto">
                 <div className="flex flex-col items-center xl:flex-row gap-[30px] ">
                     {/* form */}
-                    <div className="md:w-[80%] xl:w-[54%] xl:order-2 xl:order-none">
+                    <div className="md:w-[80%] xl:w-[54%] xl:order-none">
                         <form ref={form} onSubmit={handleSendEmail} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl text-center">
                             <h3 className="text-4xl text-luxury">Contact Us</h3>
                             <p className="text-white/60">Want to make abooking or have question to ask?<br /> Fill out the form below and we'll be in touch.

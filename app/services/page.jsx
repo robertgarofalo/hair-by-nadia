@@ -38,24 +38,6 @@ const Services = () => {
                 description: '',
                 price: '$50',
             },
-            {
-                name: 'Teen Basic Cut (13+)',
-                duration: '30mins - 1 hr',
-                description: '',
-                price: '$50',
-            },
-            {
-                name: 'Teen Basic Cut (13+)',
-                duration: '30mins - 1 hr',
-                description: '',
-                price: '$50',
-            },
-            {
-                name: 'Teen Basic Cut (13+)',
-                duration: '30mins - 1 hr',
-                description: '',
-                price: '$50',
-            },
         ],
         styling: [
             {
@@ -153,7 +135,7 @@ const Services = () => {
                 </div>
 
                 {/* intro */}
-                <div className="grid grid-cols-1 xl:grid-cols-2 xl:my-10 min-w-[400px] px-2 xl:px-20">
+                <div className="grid grid-cols-1 xl:grid-cols-2 xl:my-10 min-w-[300px] px-2 xl:px-20">
                     {/* col 1 text */}
                     <div className="flex flex-col items-center justify-center mx-auto mt-10 xl:mt-0 lg:w-[800px] xl:w-[600px] order-1 xl:order-2">
                         <p className="text-center text-[18px]"><span className="text-luxury">Hair by Nadia</span> is passionate about helping clients look and feel their best. With a personalized approach and a commitment to excellence, we create beautiful, confidence-boosting results tailored to each individual’s unique style and needs.
@@ -208,7 +190,7 @@ const Services = () => {
             </section>
 
             {/* price guide section */}
-            <div className="w-screen bg-white h-screen grid grid-cols-1 xl:grid-cols-2">
+            <div className="w-screen bg-white sm:h-screen grid grid-cols-1 xl:grid-cols-2">
                 {/* col 1 */}
                 <div className="flex flex-col items-center px-[50px] md:px-[150px]">
                     <h1 className="text-luxury text-[48px] mt-10 mb-5 border-b-2 border-luxury">Price guide</h1>
@@ -220,7 +202,7 @@ const Services = () => {
                             defaultValue="haircuts"
                             className='flex flex-col mt-10'
                         >
-                            <TabsList className="flex flex-row sm:w-full sm:gap-6 mb-10">
+                            <TabsList className="flex flex-col sm:flex-row items-center sm:w-full sm:gap-6 mb-10">
                                 <TabsTrigger value='haircuts'>Hair Cuts</TabsTrigger>
                                 <TabsTrigger value='styling'>Styling</TabsTrigger>
                                 <TabsTrigger value='occasions'>Occasions</TabsTrigger>
@@ -228,7 +210,7 @@ const Services = () => {
                             </TabsList>
 
                             {/* content */}
-                            <div className='w-full'>
+                            <div className='w-full '>
                                 {/* haircuts */}
                                 <TabsContent value="haircuts" className="w-full">
                                     {/* type=always shows scroll bar always visible */}
@@ -261,7 +243,7 @@ const Services = () => {
                             </div>
 
                             {/* book button */}
-                            <div className="mt-10 flex flex-row items-center justify-center">
+                            <div className="my-10 sm:mt-10 flex flex-row items-center justify-center">
                                 <BookAppointmentButton hidden={false} />
                             </div>
                         </Tabs>

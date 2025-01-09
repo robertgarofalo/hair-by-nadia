@@ -8,11 +8,11 @@ const About = () => {
 
         <section className="w-screen ">
             {/* row 1 */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 mb-20 min-w-[400px] px-2 xl:px-20">
+            <div className="grid grid-cols-1 xl:grid-cols-2 mb-20 px-2 xl:px-20">
                 {/* col 1 text */}
-                <div className="flex flex-col items-center justify-center mx-auto lg:w-[800px] xl:w-[600px]">
+                <div className="flex flex-col items-center justify-center mx-auto min-w-[300px] lg:w-[800px] xl:w-[600px]">
                     <h2 className="text-[48px] mb-10 text-luxury border-b-2 border-luxury">About</h2>
-                    <p className="text-center text-[18px]">Welcome to <span className="border-b-2 text-luxury border-luxury">Hair by Nadia</span> where expertise meets personalized care. With 26 years of experience in the art of hairstyling, we are passionate about helping our clients look and feel their best.
+                    <p className="text-center text-[14px] sm:text-[18px]">Welcome to <span className="border-b-2 text-luxury border-luxury">Hair by Nadia</span> where expertise meets personalized care. With 26 years of experience in the art of hairstyling, we are passionate about helping our clients look and feel their best.
                         <br />
                         <br />
                         Our services cover all aspects of hair, from precision cuts and color to specialized hair extensions, ensuring every client leaves with a style that suits their unique personality and lifestyle.</p>
@@ -27,7 +27,7 @@ const About = () => {
             </div>
 
             {/* row 2 */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 mb-10 min-w-[400px] px-2 xl:px-20">
+            <div className="grid grid-cols-1 xl:grid-cols-2 mb-10 min-w-[300px] px-2 xl:px-20">
                 {/* col 1 text */}
                 <div className="flex flex-col items-center justify-center mx-auto lg:w-[800px] xl:w-[600px] xl:order-2">
                     {/* <h2 className="text-[48px] mb-12 text-luxury border-b-2 border-luxury">About us</h2> */}
@@ -47,7 +47,7 @@ const About = () => {
             </div>
 
             {/* row 3 */}
-            <div className="grid grid-cols-1 xl:grid-cols-2 mb-10 min-w-[400px] px-2 xl:px-20">
+            <div className="grid grid-cols-1 xl:grid-cols-2 mb-10 min-w-[300px] px-2 xl:px-20">
                 {/* col 1 text */}
                 <div className="flex flex-col items-center justify-center mx-auto lg:w-[800px] xl:w-[600px] ">
                     {/* <h2 className="text-[48px] mb-12 text-luxury border-b-2 border-luxury">About us</h2> */}
@@ -71,12 +71,12 @@ const About = () => {
             </div>
 
             {/* final row */}
-            <div className="flex flex-col justify-center items-center xl:min-w-[400px] xl:mt-20">
+            <div className="flex flex-col justify-center items-center min-w-[300px] xl:min-w-[400px] xl:mt-20">
                 <div className="w-[80%] md:w-[60%] flex items-center justify-center mb-20">
                     <p className="text-[18px] text-center">At <span className="text-luxury border-b-2 border-luxury">Hair by Nadia</span>, we believe that everyone deserves to shine. Whether you're here for a transformative new look or a simple touch-up, our team is dedicated to providing exceptional care, attention to detail, and a little extra confidence in every visit.
                     </p>
                 </div>
-                <BookAppointmentButton hidden={false}/>
+                <BookAppointmentButton hidden={false} />
             </div>
 
         </section>
