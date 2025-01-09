@@ -15,7 +15,7 @@ import { motion } from "framer-motion"
 // import emailjs from '@emailjs/browser';
 
 // Api key
-const api_key = process.env.NEXT_PUBLIC_EMAILJS_API_KEY
+// const api_key = process.env.NEXT_PUBLIC_EMAILJS_API_KEY
 
 const info = [
     {
