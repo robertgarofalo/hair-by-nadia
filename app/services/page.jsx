@@ -15,14 +15,14 @@ const Services = () => {
             {
                 name: 'Basic cut +18',
                 duration: '30 mins',
-                description: 'The ultimate classic men\'s cut',
+                description: '',
                 price: '$50',
 
             },
             {
-                name: 'Kids cuts (12 yrs and younger)',
+                name: 'Kids cuts',
                 duration: '30 mins - 1hr',
-                description: 'The royal prince or princess cut',
+                description: '12 years and younger',
                 price: '$40',
 
             },
@@ -59,26 +59,86 @@ const Services = () => {
         ],
         styling: [
             {
-                name: 'Style 1',
+                name: 'Shampoo + Blow Dry',
                 duration: '30 mins',
-                description: 'The ultimate classic style',
-                price: '$50'
+                description: 'Short to Medium Hair',
+                price: '$30',
+                from: true
+            },
+            {
+                name: 'Shampoo + Blow Dry',
+                duration: '30 mins',
+                description: 'Long hair',
+                price: '$35',
+                from: true
+            },
+            {
+                name: 'Shampoo + Blow Dry',
+                duration: '30 mins',
+                description: 'Extra long hair',
+                price: '$40',
+                from: true
+            },
+            {
+                name: 'Wavy style / Iron style',
+                duration: '30 mins',
+                description: 'Add on',
+                price: '$10',
+                from: true
             },
         ],
         occasions: [
             {
-                name: 'Occasion 1',
-                duration: '30 mins',
-                description: 'The ultimate wedding style',
-                price: '$50'
+                name: 'Weddings / Engagements',
+                duration: 'Minimum 4 hours',
+                description: '',
+                price: '$450',
+                from: true,
+                perPerson: true
             },
         ],
         hairExtensions: [
             {
-                name: 'hair extensions 1',
+                name: 'Remy Microbead Weft',
                 duration: '30 mins',
-                description: 'The ultimate hair extension style',
-                price: '$50'
+                description: '20 inches - Half head (50g)',
+                price: '$300',
+                from: true
+            },
+            {
+                name: 'Remy Microbead Weft',
+                duration: '30 mins',
+                description: '20 inches - Full head (100g)',
+                price: '$600',
+                from: true
+            },
+            {
+                name: 'Remy Microbead Weft',
+                duration: '30 mins',
+                description: '20 inches - Full head & 1/2 (150g)',
+                price: '$950',
+                from: true
+            },
+            {
+                name: 'J\'adore Microbead Weft',
+                duration: '30 mins',
+                description: '20 inches - Half head (50g)',
+                price: '$400',
+                from: true
+            },
+            {
+                name: 'J\'adore Microbead Weft',
+                duration: '30 mins',
+                description: '20 inches - Full head (100g)',
+                price: '$700',
+                from: true
+            },
+            {
+                name: 'J\'adore Microbead Weft',
+                duration: '30 mins',
+                description: '20 inches - Full head & 1/2 (150g)',
+                price: '$1000',
+                from: true
             },
         ],
     }
@@ -148,19 +208,19 @@ const Services = () => {
             </section>
 
             {/* price guide section */}
-            <div className="w-screen bg-white h-screen grid grid-cols-2">
+            <div className="w-screen bg-white h-screen grid grid-cols-1 xl:grid-cols-2">
                 {/* col 1 */}
-                <div className="flex flex-col items-center px-[150px]">
-                    <h1 className="text-primary text-[48px] mt-10">Price guide</h1>
-                    <p className="text-primary w-[70%] text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div className="flex flex-col items-center px-[50px] md:px-[150px]">
+                    <h1 className="text-luxury text-[48px] mt-10 mb-5 border-b-2 border-luxury">Price guide</h1>
+                    <p className="text-primary md:w-[70%] text-center">Explore our competitive pricing tailored to suit your unique needs, ensuring exceptional quality and value</p>
 
                     {/* Tabs */}
-                    <div className="mx-auto">
+                    <div className="">
                         <Tabs
                             defaultValue="haircuts"
                             className='flex flex-col mt-10'
                         >
-                            <TabsList className="flex flex-row w-full gap-6 mb-10">
+                            <TabsList className="flex flex-row sm:w-full sm:gap-6 mb-10">
                                 <TabsTrigger value='haircuts'>Hair Cuts</TabsTrigger>
                                 <TabsTrigger value='styling'>Styling</TabsTrigger>
                                 <TabsTrigger value='occasions'>Occasions</TabsTrigger>
@@ -211,7 +271,7 @@ const Services = () => {
 
 
                 {/* col 2 */}
-                <div className="relative ">
+                <div className="hidden xl:flex relative">
                     <Image src='/assets/about-us-main.png' layout="fill" objectFit="cover" alt="main" />
                 </div>
             </div>
