@@ -44,14 +44,14 @@ export default function MasonryGrid() {
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className="break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                        className="break-inside-avoid overflow-hidden rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300"
                     >
                         <Image
                             src={image}
                             alt={`image ${index}`}
                             width={500}
                             height={300}
-                            className="w-full h-auto object-cover"
+                            className="w-full h-auto object-cover "
                         />
                     </div>
                 ))}
