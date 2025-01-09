@@ -12,20 +12,25 @@ export default function MasonryGrid() {
     //         .then((data) => setImages(data));
     // }, []);
 
+
     const images = [
-        'https://images.unsplash.com/photo-1736168432643-2d5882e17aeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1734279135171-b283435831db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735405659018-b63cdfc215de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735437629103-0fac198c7c2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735835593807-575407b39ed7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2Mnx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735578515772-b2c4f60b4cb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735405659018-b63cdfc215de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1736168432643-2d5882e17aeb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1736144287605-3919f585752c?q=80&w=1982&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1736024852276-112dad90586d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1725830826396-bcb0585da085?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3NXx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735578515772-b2c4f60b4cb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D',
-        'https://images.unsplash.com/photo-1735578515772-b2c4f60b4cb3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNXx8fGVufDB8fHx8fA%3D%3D',
+        'https://cdn.pixabay.com/photo/2018/02/14/21/45/woman-3153999_640.jpg',
+        'https://cdn.pixabay.com/photo/2017/06/15/11/40/beautiful-2405131_640.jpg',
+        'https://cdn.pixabay.com/photo/2016/06/06/17/05/woman-1439909_640.jpg',
+        'https://cdn.pixabay.com/photo/2017/05/28/09/44/woman-2350565_640.jpg',
+        'https://cdn.pixabay.com/photo/2024/08/24/05/02/woman-8993222_640.jpg',
+        'https://cdn.pixabay.com/photo/2019/09/16/09/30/alone-4480444_640.jpg',
+        'https://cdn.pixabay.com/photo/2015/07/07/23/40/fashion-835219_640.jpg',
+        'https://cdn.pixabay.com/photo/2020/02/24/09/11/man-4875665_640.jpg',
+        'https://cdn.pixabay.com/photo/2024/06/10/06/54/ai-generated-8820062_640.jpg',
+        'https://cdn.pixabay.com/photo/2018/04/27/03/51/woman-3353702_640.jpg',
+        'https://cdn.pixabay.com/photo/2020/06/08/09/01/hair-5273705_640.jpg',
+        'https://cdn.pixabay.com/photo/2020/01/17/16/26/portrait-4773351_640.jpg',
+        'https://cdn.pixabay.com/photo/2023/08/17/19/00/woman-8197201_640.jpg',
+        'https://cdn.pixabay.com/photo/2021/09/04/05/11/hair-6597025_640.jpg',
+        'https://cdn.pixabay.com/photo/2024/10/27/15/43/ai-generated-9153698_640.png',
+        'https://cdn.pixabay.com/photo/2024/05/06/00/39/one-person-8742116_640.jpg',
+        'https://cdn.pixabay.com/photo/2014/10/31/07/05/young-girl-510441_640.jpg',
     ]
 
     return (
@@ -34,7 +39,7 @@ export default function MasonryGrid() {
             <div className="text-center">
                 <h1 className="text-[48px] inline-block mb-10 text-luxury border-b-2 border-luxury">Gallery</h1>
             </div>
-            
+
             <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-5 space-y-4">
                 {images.map((image, index) => (
                     <div
